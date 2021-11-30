@@ -26,7 +26,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 100px;
+    padding-right: 65px;
 }
 
 .title {
@@ -37,8 +37,10 @@ header {
 }
 
 .line-divider {
-    width: 200px;
+    max-width: 100%;
+    width: 320px;
     border-bottom: 1px solid white;
+    margin: auto;
 }
 
 /* Right side of Header */
@@ -70,15 +72,25 @@ header {
 
 /* Small Tablet Styles */
 @media screen and (min-width: 620px) {
-
+	.line-divider {
+		width: 400px;
+    margin: auto;
+	}
 }
 
 /* Large Tablet & Laptops */
 @media screen and (min-width: 960px) {
-    
+	.line-divider {
+		width: 530px;
+		margin: auto;
+	}
+
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
-    
+	.line-divider {
+		width: 650px;
+		margin: auto;
+	}
 }
