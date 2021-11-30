@@ -1,0 +1,27 @@
+body {
+    background-color: 52B788;
+}
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+
+/* Small Tablet Styles */
+@media screen and (min-width: 620px) {
+
+}
+
+/* Large Tablet & Laptops */
+@media screen and (min-width: 960px) {
+    
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1200px) {
+    
+}
