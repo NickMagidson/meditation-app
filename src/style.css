@@ -64,7 +64,39 @@ header {
     width: 30px;
 }
 
+/* GREY BOX */
 
+.grey-box {
+    background-color: rgba(27, 41, 34, 28%);
+    height: 393px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    box-shadow: 5px 10px 4px rgba(27, 41, 34, 28%);
+}
+
+.number-box {
+    background-color: rgba(149, 213, 178, 47%);
+    width: 300px;
+    height: 143px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.timer-text {
+    color: #fff;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'roboto';
+    margin: auto;   
+}
 
 
 

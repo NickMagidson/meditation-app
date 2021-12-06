@@ -6,9 +6,19 @@ class Timer extends Component {
   }
 
 
+
+
   render() {
     return (
-			<div>
+			<div className="grey-box">
+
+        <div className="number-box">
+          <h2 className="timer-text">10:00</h2>
+        </div>
+
+        <div className="buttons-container">
+
+        </div>
 
 			</div>
     );
