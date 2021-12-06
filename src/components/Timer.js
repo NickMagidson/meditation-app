@@ -1,28 +1,29 @@
 import React, { Component } from "react";
 
-class Timer extends Component {
-  constructor(props) {
-    super(props)
-  }
+function Timer() {
 
 
 
+  return (
+    <>
+        <div className="grey-box">
 
-  render() {
-    return (
-			<div className="grey-box">
+          <div className="number-box">
+            <h2 className="timer-text">10:00</h2>
+          </div>
 
-        <div className="number-box">
-          <h2 className="timer-text">10:00</h2>
+          <div className="buttons-container">
+            <button className="timer-button">
+              <img 
+                className="play" 
+                src="https://img.icons8.com/ios-glyphs/90/ffffff/play--v1.png" 
+              />
+            </button>
+          </div>
+
         </div>
-
-        <div className="buttons-container">
-
-        </div>
-
-			</div>
+    </>
     );
   }
-}
 
 export default Timer;

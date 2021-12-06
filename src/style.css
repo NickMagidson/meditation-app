@@ -3,6 +3,8 @@
     src: url('./font/static/RedHatText-Regular.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
 
 body {
     background-color: #52B788;
@@ -68,7 +70,7 @@ header {
 
 .grey-box {
     background-color: rgba(27, 41, 34, 28%);
-    height: 393px;
+    height: 525px;
     border-radius: 5%;
     display: flex;
     /* flex-direction: column; */
@@ -97,10 +99,38 @@ header {
     color: #fff;
     text-align: center;
     font-size: 100px;
-    font-family: 'roboto';
+    font-family: 'Roboto';
+    font-weight: normal;
     margin: auto;   
 }
 
+.buttons-container {
+    width: 190px;
+    height: 180px;
+    margin: auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.timer-button {
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 5px 10px 4px rgba(27, 41, 34, 28%);
+    background-color: rgba(149, 213, 178, 100%);
+}
+
+.play {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 5px;
+}
 
 
 /* Mobile Styles */
