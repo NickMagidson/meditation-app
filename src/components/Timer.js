@@ -1,6 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
-
-
+import React, { Component, useState } from "react";
 
 
 function Timer() {
@@ -21,15 +19,13 @@ function Timer() {
       }
     }, 1000)
   
+  // Button to start timer
   function handleClick() {
     console.log('Clicked');
   }
 
-
   const timerMinutes = minutes < 10 ? `0${minutes}`: minutes;
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
-
-
 
   return (
     <>
