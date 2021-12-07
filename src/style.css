@@ -116,8 +116,8 @@ header {
 }
 
 .timer-button {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border: none;
     border-radius: 50%;
     box-shadow: 5px 10px 4px rgba(27, 41, 34, 28%);
@@ -125,8 +125,8 @@ header {
 }
 
 .play {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     margin: auto;
     margin-left: 10px;
     margin-top: 5px;
