@@ -7,7 +7,6 @@ function Timer() {
   const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
 
-  function handleClick() {
     let interval = setInterval(() => {
       clearInterval(interval);
       if (seconds === 0) {
@@ -21,6 +20,9 @@ function Timer() {
         setSeconds(seconds - 1);
       }
     }, 1000)
+  
+  function handleClick() {
+    console.log('Clicked');
   }
 
 
