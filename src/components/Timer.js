@@ -34,7 +34,7 @@ function Timer() {
         <div className="number-box">
           <h2 className="timer-text">{timerMinutes}:{timerSeconds}</h2>
         </div>
-        <input className="input" type="number" placeholder="Set Time" align="center" />
+        <input className="input" type="range" placeholder="Set Time" align="center" />
         <div className="buttons-container">
           <button className="timer-button" onClick={handleClick}>
             <img 
