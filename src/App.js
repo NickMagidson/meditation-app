@@ -9,9 +9,6 @@ function App() {
     <div className='app'>
       <Header />
       <Timer />
-        {/* Input for timer */}
-        {/* Start button */}
-
     </div>
   );
 }
