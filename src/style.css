@@ -104,6 +104,23 @@ header {
     margin: auto;   
 }
 
+.input {
+    height: 25px;
+    position: absolute;
+    bottom: 26.5em;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+input[type=number] {
+    margin: auto;
+}
+
 .buttons-container {
     width: 190px;
     height: 180px;

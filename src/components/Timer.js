@@ -5,6 +5,7 @@ function Timer() {
   const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
 
+  
     let interval = setInterval(() => {
       clearInterval(interval);
       if (seconds === 0) {
@@ -33,6 +34,7 @@ function Timer() {
         <div className="number-box">
           <h2 className="timer-text">{timerMinutes}:{timerSeconds}</h2>
         </div>
+        <input className="input" type="number" placeholder="Set Time" align="center" />
         <div className="buttons-container">
           <button className="timer-button" onClick={handleClick}>
             <img 
