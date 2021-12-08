@@ -47,7 +47,6 @@ function Timer() {
         <div className="number-box">
           <h2 className="timer-text">{mDisplay}:{sDisplay}</h2>
         </div>
-
         <div className="buttons-container">
         <input 
           className="input" 
