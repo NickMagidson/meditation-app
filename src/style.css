@@ -106,8 +106,8 @@ header {
 
 .input {
     height: 25px;
-    /* position: absolute;
-    bottom: 26.5em; */
+    position: absolute;
+    bottom: 26.5em;
     border: none;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0);
