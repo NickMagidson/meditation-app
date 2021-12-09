@@ -1,6 +1,12 @@
 import React, { useState , useEffect, useRef} from "react";
 import Play from '../imgs/play.png';
 import Pause from '../imgs/pause.png';
+import Press from '../sounds/press.wav';
+import Bell from '../sounds/bell.wav';
+
+//Sound variables
+let press = new Audio(Press);
+let bell = new Audio(Bell);
 
 
 function ClearTimer(TimerHndlRef) {
@@ -20,8 +26,10 @@ function Timer() {
       ClearTimer(TimerHndlRef);
       return;
     }
+
     // If not done, then start timer
-    setActive(true);
+    setActive(true); // Timer active
+    press.play(); // Play sound
     TimerHndlRef.current = setInterval(() => 
       setSeconds((s) => {
         const v = s - 1;
