@@ -12,6 +12,7 @@ let bell = new Audio(Bell);
 function ClearTimer(TimerHndlRef) {
   clearInterval(TimerHndlRef.current);
   TimerHndlRef.current = null;
+  bell.play();
 }
 
 function Timer() {
