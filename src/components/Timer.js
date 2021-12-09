@@ -52,7 +52,7 @@ function Timer() {
           className="input" 
           type="range"
           min="10"
-          max="3600" 
+          max="3600"
           value={seconds}
           onChange={onChange}
            />

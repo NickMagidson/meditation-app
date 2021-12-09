@@ -167,6 +167,13 @@ input[type=range] {
     background-color: rgba(149, 213, 178, 100%);
 }
 
+.timer-button:active {
+
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
 .play {
     width: 65px;
     height: 65px;
