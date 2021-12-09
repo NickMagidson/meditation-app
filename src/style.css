@@ -189,16 +189,33 @@ input[type=range] {
 @media screen and (min-width: 620px) {
 	.line-divider {
 		width: 400px;
-    margin: auto;
+        margin: auto;
 	}
 }
 
 /* Large Tablet & Laptops */
 @media screen and (min-width: 960px) {
+    .grey-box {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .number-box {
+        width: 100%;
+        max-width: 350px;
+    }
+
 	.line-divider {
 		width: 530px;
 		margin: auto;
 	}
+
+    input[type=range] {
+        height: 26px;
+        -webkit-appearance: none;
+        width: 30%;
+      }
 
 }
 
