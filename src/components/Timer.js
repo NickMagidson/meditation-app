@@ -1,4 +1,6 @@
-import React, { Component,  useState , useEffect, useRef} from "react";
+import React, { useState , useEffect, useRef} from "react";
+import Play from '../imgs/play.png';
+import Pause from '../imgs/pause.png';
 
 
 function ClearTimer(TimerHndlRef) {
@@ -9,6 +11,7 @@ function ClearTimer(TimerHndlRef) {
 function Timer() {
   const TimerHndlRef = useRef();
   const [seconds, setSeconds] = useState(1800);
+
   const onClick = () => {
     // Check to see if timer is done
     if (TimerHndlRef.current) {
@@ -59,7 +62,7 @@ function Timer() {
           <button className="timer-button" onClick={onClick}>
             <img 
               className="play" 
-              src="https://img.icons8.com/ios-glyphs/90/ffffff/play--v1.png" 
+              src={Play}
             />
           </button>
         </div>
