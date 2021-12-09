@@ -11,14 +11,17 @@ function ClearTimer(TimerHndlRef) {
 function Timer() {
   const TimerHndlRef = useRef();
   const [seconds, setSeconds] = useState(1800);
+  const [active, setActive] = useState(false)
 
   const onClick = () => {
     // Check to see if timer is done
     if (TimerHndlRef.current) {
+      setActive(false);
       ClearTimer(TimerHndlRef);
       return;
     }
     // If not done, then start timer
+    setActive(true);
     TimerHndlRef.current = setInterval(() => 
       setSeconds((s) => {
         const v = s - 1;
@@ -62,7 +65,7 @@ function Timer() {
           <button className="timer-button" onClick={onClick}>
             <img 
               className="play" 
-              src={Play}
+              src={active === true ? Pause : Play}
             />
           </button>
         </div>
