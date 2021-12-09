@@ -157,7 +157,6 @@ input[type=range] {
     margin-top: -3.5px;
   }
 
-
 .timer-button {
     width: 140px;
     height: 140px;
@@ -175,7 +174,6 @@ input[type=range] {
   transform: translateY(4px);
 }
 
-
 .play {
     width: 65px;
     height: 65px;
@@ -189,8 +187,21 @@ input[type=range] {
 @media screen and (min-width: 620px) {
 	.line-divider {
 		width: 400px;
+        max-width: 900px;
         margin: auto;
 	}
+
+    .grey-box {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=range] {
+        height: 26px;
+        -webkit-appearance: none;
+        width: 30%;
+      }
 }
 
 /* Large Tablet & Laptops */
@@ -208,6 +219,7 @@ input[type=range] {
 
 	.line-divider {
 		width: 530px;
+        max-width: 900px;
 		margin: auto;
 	}
 
@@ -216,13 +228,19 @@ input[type=range] {
         -webkit-appearance: none;
         width: 30%;
       }
-
 }
 
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
 	.line-divider {
-		width: 650px;
+		width: 900px;
+        max-width: 900px;
 		margin: auto;
 	}
+
+    .grey-box {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
