@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Gear from '../imgs/gear.png'
 import Modal from "./Modal";
 
 function Header() {
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
 		<>
 			<header>
@@ -11,11 +13,11 @@ function Header() {
 				</div>
 
 				<div className="right-side">
-					<button className="settings-button">
+					<button onClick={() => setIsOpen(true)} className="settings-button">
 						<img id="gear" src={Gear} />
 					</button>
 
-					<Modal>
+					<Modal open={isOpen} onClose={() => setIsOpen(false)}>
 						Settings Menu
 					</Modal>
 					 
