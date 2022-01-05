@@ -6,9 +6,12 @@ const MODAL_STYLES = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  backgroundColor: '#fff',
+  backgroundColor: 'rgba(255, 255, 255, 80%)',
+  borderRadius: '15px',
   padding: '50px',
-  zIndex: 1000
+  zIndex: 1000,
+  maxWidth: '400px',
+  width: '60%',
 }
 
 const OVERLAY_STYLES = {
@@ -29,7 +32,7 @@ export default function Modal({ open, children, onClose }) {
       <div style={OVERLAY_STYLES} />
       <div style={MODAL_STYLES}>
         <button onClick={onClose}>Close</button>
-        {children}			
+        {children}	
       </div>
     </>,
     document.getElementById('portal')

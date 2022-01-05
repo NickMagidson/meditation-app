@@ -17,9 +17,7 @@ function Header() {
 						<img id="gear" src={Gear} />
 					</button>
 
-					<Modal open={isOpen} onClose={() => setIsOpen(false)}>
-						Settings Menu
-					</Modal>
+					<Modal open={isOpen} onClose={() => setIsOpen(false)} />
 					 
 				</div>
 			</header>
