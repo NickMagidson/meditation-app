@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import Close from '../imgs/close.png';
+import Timer from './Timer';
 
 const MODAL_STYLES = {
   position: 'fixed',
@@ -38,7 +39,7 @@ export default function Modal({ open, children, onClose }) {
         <button className='close-button' onClick={onClose}><img className='close-img' src={Close} /></button>
         {children}	 
 
-        <div className='divider-line'></div>
+        <div className='divider-line'> </div>
 
         {/* <div>
           <p>Time (minutes)</p>
