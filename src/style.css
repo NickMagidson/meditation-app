@@ -199,6 +199,12 @@ input[type=range] {
     position: absolute;
     top: 20px;
     right: 24px;
+    border: none;
+    background-color: #00000000;
+}
+
+.close-img {
+    width: 25px;
 }
 
 

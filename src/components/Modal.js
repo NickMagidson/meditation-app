@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
+import Close from '../imgs/close.png';
 
 const MODAL_STYLES = {
   position: 'fixed',
@@ -34,7 +35,7 @@ export default function Modal({ open, children, onClose }) {
       <div style={MODAL_STYLES}>
 
         <h2 className='settings-text'>Settings</h2>
-        <button className='close-button' onClick={onClose}>Close</button>
+        <button className='close-button' onClick={onClose}><img className='close-img' src={Close} /></button>
         {children}	 
 
         <div className='divider-line'></div>
