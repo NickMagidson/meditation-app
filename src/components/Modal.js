@@ -21,7 +21,7 @@ const OVERLAY_STYLES = {
   right: 0,
   bottom: 0,
   backgroundColor: 'rgba(0, 0, 0, .7)',
-  zIndex: 1000
+  zIndex: 1000,
 }
 
 export default function Modal({ open, children, onClose }) {
@@ -30,9 +30,20 @@ export default function Modal({ open, children, onClose }) {
   return ReactDOM.createPortal(
     <>
       <div style={OVERLAY_STYLES} />
+
       <div style={MODAL_STYLES}>
-        <button onClick={onClose}>Close</button>
-        {children}	
+
+        <h2 className='settings-text'>Settings</h2>
+        <button className='close-button' onClick={onClose}>Close</button>
+        {children}	 
+
+        <div className='divider-line'></div>
+
+        {/* <div>
+          <p>Time (minutes)</p>
+        </div> */}
+
+
       </div>
     </>,
     document.getElementById('portal')

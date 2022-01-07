@@ -181,7 +181,29 @@ input[type=range] {
 }
 
 
-/* Mobile Styles */
+/* MODAL STYLES */
+
+.settings-text {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 10px;
+    left: 32px;
+    font-family: 'red-hat-text';
+    color: rgba(19, 19, 19, 0.767);
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+}
+
+
+
+
 
 /* Small Tablet Styles */
 @media screen and (min-width: 620px) {
