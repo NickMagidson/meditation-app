@@ -184,7 +184,7 @@ input[type=range] {
 /* MODAL STYLES */
 
 .settings-text {
-    font-size: 16px;
+    font-size: 1.1em;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 30px;
@@ -210,8 +210,8 @@ input[type=range] {
 .sound-div {
     display: flex;
     flex-direction: row;
-    align-items: space-between;
-    height: 100px;
+    align-items: center;
+    height: 50px;
     margin-top: 20px;
 }
 
@@ -271,7 +271,6 @@ input[type=range] {
     .sound-form {
         width: 60%;
         margin-left: 50px;
-        margin-top: 10px;
     }
 }
 
