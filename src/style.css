@@ -262,7 +262,17 @@ input[type=range] {
         height: 26px;
         -webkit-appearance: none;
         width: 30%;
-      }
+    }
+
+    .sound-title {
+        font-size: 1em;
+    }
+
+    .sound-form {
+        width: 60%;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
 }
 
 /* Large Tablet & Laptops */
