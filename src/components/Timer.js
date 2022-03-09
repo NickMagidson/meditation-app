@@ -68,6 +68,7 @@ function Timer() {
           type="range"
           min="10"
           max="3600"
+          step="10"
           value={seconds}
           onChange={onChange}
            />

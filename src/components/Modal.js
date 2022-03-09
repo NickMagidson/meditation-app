@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import Close from '../imgs/close.png';
+import Sounds from './Sounds';
 import Timer from './Timer';
 
 const MODAL_STYLES = {
@@ -39,12 +40,12 @@ export default function Modal({ open, children, onClose }) {
         <button className='close-button' onClick={onClose}><img className='close-img' src={Close} /></button>
         {children}	 
 
-        <div className='divider-line'> </div>
+        <div className='modal-divider'> </div>
 
-        {/* <div>
-          <p>Time (minutes)</p>
-        </div> */}
-
+        <div className='sound-div'>
+          <h2 className='sound-title'>Sound Select</h2>
+          <Sounds />
+        </div>
 
       </div>
     </>,
